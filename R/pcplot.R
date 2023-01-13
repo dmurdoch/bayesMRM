@@ -24,7 +24,7 @@ pcplot <- function(x,P0=NULL,G3D=FALSE,...){
 
    if(length(rgl::rgl.dev.list())!=0){
       for(i in 1:length(rgl::rgl.dev.list()))
-         rgl::rgl.close()
+         rgl::close3d()
    }
 
    Y <- x$Y
